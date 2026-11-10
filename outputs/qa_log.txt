@@ -147,3 +147,44 @@
 2026-11-10 13:09:30 | STEP-TGT | targeted_chip_count | 157 | PASS
 2026-11-10 13:09:30 | STEP-TGT | targeted_leak_count | 81 | PASS
 2026-11-10 13:09:30 | STEP-TGT | readme_chip_vs_clean | comp 86% vs 73%, yds 6.1 vs 7.1 | PASS
+2026-11-10 13:28:58 | STEP5 | rb_leak_dropped_insufficient | 31 routes | PASS
+2026-11-10 13:28:58 | STEP5 | te_leak_mode | within_player (players>=5rts=20) | PASS
+2026-11-10 13:28:58 | STEP5 | n_players_lt15_chip_tthrow_2.5_4.0_TE_t_release_rel_capped | 11 | PASS
+2026-11-10 13:28:58 | STEP5 | n_players_lt15_chip_tthrow_2.5_4.0_TE_depth_gain_at_throw | 11 | PASS
+2026-11-10 13:28:58 | STEP5 | n_players_lt15_chip_tthrow_2.5_4.0_TE_sep_at_throw | 11 | PASS
+2026-11-10 13:28:58 | STEP5 | n_players_lt15_chip_tthrow_2.5_4.0_RB_t_release_rel_capped | 6 | PASS
+2026-11-10 13:28:58 | STEP5 | n_players_lt15_chip_tthrow_2.5_4.0_RB_depth_gain_at_throw | 6 | PASS
+2026-11-10 13:28:58 | STEP5 | n_players_lt15_chip_tthrow_2.5_4.0_RB_sep_at_throw | 6 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_TE_t_release_rel_capped | eff=1.3 naive=1.3 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_TE_depth_gain_at_throw | eff=-3.7825 naive=-3.68 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_TE_sep_at_throw | eff=2.6034 naive=2.9292 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_RB_t_release_rel_capped | eff=0.85 naive=0.9 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_RB_depth_gain_at_throw | eff=-1.5125 naive=-1.69 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_RB_sep_at_throw | eff=1.7768 naive=2.0625 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_leak_TE_t_release_rel_capped | eff=1.5 naive=1.6 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_leak_TE_depth_gain_at_throw | eff=-5.4025 naive=-5.505 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_leak_TE_sep_at_throw | eff=2.7143 naive=3.1471 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_tthrow_2.5_4.0_TE_t_release_rel_capped | eff=1.3 naive=1.4 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_tthrow_2.5_4.0_TE_depth_gain_at_throw | eff=-5.93 naive=-5.89 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_tthrow_2.5_4.0_TE_sep_at_throw | eff=3.2614 naive=3.1978 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_tthrow_2.5_4.0_RB_t_release_rel_capped | eff=0.7 naive=0.9 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_tthrow_2.5_4.0_RB_depth_gain_at_throw | eff=-2.05 naive=-2.66 | PASS
+2026-11-10 13:28:58 | STEP5 | sign_match_chip_tthrow_2.5_4.0_RB_sep_at_throw | eff=2.3711 naive=2.6024 | PASS
+2026-11-10 13:28:58 | STEP5 | chip_release_effect_positive_TE | 1.3 | PASS
+2026-11-10 13:28:58 | STEP5 | chip_release_effect_positive_RB | 0.85 | PASS
+2026-11-10 13:28:58 | STEP5 | manual_verify_top_chipper_diff | hand=1.3000 func=1.3000 | PASS
+2026-11-10 13:28:59 | STEP5 | seed_stability_ci_move_lt10pct | 0.0846 | PASS
+2026-11-10 13:28:59 | STEP5 | sanity_TE_t_release_rel_capped | got=1.300 exp=1.3 | PASS
+2026-11-10 13:28:59 | STEP5 | sanity_TE_depth_gain_at_throw | got=-3.783 exp=-4.0 | PASS
+2026-11-10 13:28:59 | STEP5 | sanity_TE_sep_at_throw | got=2.603 exp=2.6 | PASS
+2026-11-10 13:28:59 | STEP5 | sanity_RB_t_release_rel_capped | got=0.850 exp=0.85 | PASS
+2026-11-10 13:28:59 | STEP5 | sanity_RB_depth_gain_at_throw | got=-1.512 exp=-1.5 | PASS
+2026-11-10 13:28:59 | STEP5 | sanity_RB_sep_at_throw | got=1.777 exp=1.8 | PASS
+2026-11-10 13:28:59 | STEP6 | no_duplicate_nflId | True | PASS
+2026-11-10 13:28:59 | STEP6 | only_te_rb_fb | offenders=0 | PASS
+2026-11-10 13:28:59 | STEP6 | chip_release_median_eq_step5_pooled | tbl=1.0500 step5pooled=1.0500 | PASS
+2026-11-10 13:28:59 | STEP-TGT | parse_rate_on_throws | 0.913 | PASS
+2026-11-10 13:28:59 | STEP-TGT | targeted_routes_total | 2664 | PASS
+2026-11-10 13:28:59 | STEP-TGT | targeted_chip_count | 157 | PASS
+2026-11-10 13:28:59 | STEP-TGT | targeted_leak_count | 81 | PASS
+2026-11-10 13:28:59 | STEP-TGT | readme_chip_vs_clean | comp 86% vs 73%, yds 6.1 vs 7.1 | PASS
