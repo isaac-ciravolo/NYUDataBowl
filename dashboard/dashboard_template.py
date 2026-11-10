@@ -49,6 +49,13 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
   th:first-child,td:first-child{text-align:left}
   th{cursor:pointer;user-select:none;position:sticky;top:0;background:#fbfcfd}
+  .ptable{table-layout:fixed;font-size:12.5px}
+  .ptable th,.ptable td{white-space:normal;overflow-wrap:break-word;word-break:normal;vertical-align:top}
+  .ptable th{font-size:12px;line-height:1.25}
+  .ptable th:first-child,.ptable td:first-child{width:150px}
+  .ptable th:nth-child(2),.ptable td:nth-child(2){width:46px}
+  .ptable th:nth-child(3),.ptable th:nth-child(4),.ptable th:nth-child(5),
+  .ptable td:nth-child(3),.ptable td:nth-child(4),.ptable td:nth-child(5){width:52px}
   th.sorted::after{content:" \u25be";color:var(--muted)}
   th.asc.sorted::after{content:" \u25b4"}
   tr:hover td{background:#fafcfe}
@@ -392,9 +399,9 @@ function playerTable(p){
 
   const cols=[["name","Player",r=>r.name],["position","Pos",r=>r.position],
               ["n_chip","Chip routes",r=>r.n_chip],["n_leak","Leak routes",r=>r.n_leak],["n_clean","Clean routes",r=>r.n_clean]];
-  metrics.forEach(m=>cols.push([m.col,(MODE==="score"?"\u2b50 ":"")+m.label+(MODE==="score"?" (1\u2013100)":` (${m.unit})`),null]));
+  metrics.forEach(m=>cols.push([m.col,(MODE==="score"?"\u2b50 ":"")+(m.short||m.label)+(MODE==="score"?" (1\u2013100)":` (${m.unit})`),null]));
 
-  const tbl=el("table"), thead=el("thead"), tr=el("tr");
+  const tbl=el("table","ptable"), thead=el("thead"), tr=el("tr");
   cols.forEach(([ck,label])=>{
     const th=el("th",null,label);
     if(ck===playerSort.col) th.className=(playerSort.asc?"asc ":"")+"sorted";

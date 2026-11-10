@@ -287,7 +287,7 @@ def build_teams():
 #      leak_sep_gain_yd     : GREATER separation gain  -> orient = value
 # ==========================================================================
 PLAYER_METRICS = [
-    dict(col="chip_release_delay_s", label="Chip release delay",
+    dict(col="chip_release_delay_s", label="Chip release delay", short="Release delay",
          unit="s", favorable="lower", arrow="\u2193 lower is better",
          plain="How much later he gets into his route after chipping a rusher, vs. his normal routes. "
                "Smaller = he chips and still releases on time.",
@@ -295,7 +295,7 @@ PLAYER_METRICS = [
               "(snap-relative release time; if the player never released before the throw, release "
               "time is CAPPED at t_throw \u2014 'as late as the throw itself'). Lower delay is more favorable. "
               "Needs \u226510 chip and \u226510 clean routes to rank.", orient=-1),
-    dict(col="chip_depth_change_yd", label="Route depth kept after chipping",
+    dict(col="chip_depth_change_yd", label="Route depth kept after chipping", short="Depth kept",
          unit="yd", favorable="greater", arrow="\u2191 higher is better",
          plain="How much route depth he keeps after chipping, vs. his normal routes (usually a loss). "
                "Closer to zero / positive = the chip barely costs him downfield.",
@@ -303,7 +303,7 @@ PLAYER_METRICS = [
               "(snap-relative depth). Values are typically negative (chips cost route depth); "
               "greater depth retention (less negative) is more favorable. Needs \u226510 chip and \u226510 clean.",
          orient=1),
-    dict(col="leak_sep_gain_yd", label="Extra separation when he leaks out (TE only)",
+    dict(col="leak_sep_gain_yd", label="Extra separation when he leaks out (TE only)", short="Leak separation",
          unit="yd", favorable="greater", arrow="\u2191 higher is better",
          plain="Extra yards of separation he gets on sneak-out 'leak' routes, vs. his normal routes. "
                "Bigger = dangerous as a surprise receiving option.",
