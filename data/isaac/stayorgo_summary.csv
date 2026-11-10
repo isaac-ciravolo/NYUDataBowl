@@ -1,0 +1,7 @@
+population,metric,estimate,ci_low,ci_high,unit,num,den,n_invalid_draws,notes
+5plus_rushers,stay_only_pressure_rate,0.4613,0.422627,0.502863,proportion,298.0,646.0,0,any-rusher pressure rate on stay_only plays
+5plus_rushers,go_only_pressure_rate,0.423767,0.394536,0.45279,proportion,378.0,892.0,0,any-rusher pressure rate on go_only plays
+5plus_rushers,stay_minus_go_diff,3.753349,-0.857607,8.380077,percentage_points,,,0,stay_only minus go_only pressure rate; game-cluster bootstrap CI
+4_rushers_baseline,stay_only_pressure_rate,0.308673,0.261327,0.356968,proportion,121.0,392.0,0,any-rusher pressure rate on stay_only plays
+4_rushers_baseline,go_only_pressure_rate,0.281652,0.26673,0.29574,proportion,1139.0,4044.0,0,any-rusher pressure rate on go_only plays
+4_rushers_baseline,stay_minus_go_diff,2.702164,-1.952733,7.416851,percentage_points,,,0,stay_only minus go_only pressure rate; game-cluster bootstrap CI

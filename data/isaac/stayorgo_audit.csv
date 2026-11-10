@@ -1,0 +1,25 @@
+item,value
+analysis_population,TRADITIONAL dropbacks (chosen common population)
+traditional_plays,6542
+stay_only_plays,1059
+go_only_plays,5231
+mixed_plays_excluded,147
+neither_unknown_plays_excluded,105
+unknown_pressure_outcome_plays,0
+primary_stay_go_plays_known,6290
+n_bootstrap,1000
+random_seed,42
+bs_valid_draws_5plus,1000
+bs_invalid_draws_5plus,0
+bs_valid_draws_4,1000
+bs_invalid_draws_4,0
+primary_rushers_1_stay,1
+primary_rushers_1_go,1
+primary_rushers_2_stay,0
+primary_rushers_2_go,11
+primary_rushers_3_stay,20
+primary_rushers_3_go,283
+primary_rushers_4_stay,392
+primary_rushers_4_go,4044
+primary_rushers_5plus_stay,646
+primary_rushers_5plus_go,892
