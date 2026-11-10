@@ -1,0 +1,13 @@
+comparison,population,metric,estimate,ci_low,ci_high,unit,num,den,n_eligible_rushers,n_unusable_draws,notes
+within_rusher,all_downs,chipped_pressure_rate,0.075284,,,proportion,53.0,704.0,77.0,,pooled chipped pressure rate across eligible rushers
+within_rusher,all_downs,nonchipped_pressure_rate,0.114439,,,proportion,940.0,8214.0,77.0,,pooled non-chipped pressure rate across eligible rushers
+within_rusher,all_downs,median_within_rusher_diff,-6.402,-6.9819,-4.1237,percentage_points,,,77.0,0.0,median of per-rusher (chipped - nonchipped) pressure-rate diffs
+within_rusher,passing_downs,chipped_pressure_rate,0.115789,,,proportion,11.0,95.0,14.0,,pooled chipped pressure rate across eligible rushers
+within_rusher,passing_downs,nonchipped_pressure_rate,0.145455,,,proportion,48.0,330.0,14.0,,pooled non-chipped pressure rate across eligible rushers
+within_rusher,passing_downs,median_within_rusher_diff,-7.4176,-14.0642,4.086,percentage_points,,,14.0,0.0,median of per-rusher (chipped - nonchipped) pressure-rate diffs
+within_rusher,other_downs,chipped_pressure_rate,0.070352,,,proportion,28.0,398.0,54.0,,pooled chipped pressure rate across eligible rushers
+within_rusher,other_downs,nonchipped_pressure_rate,0.10926,,,proportion,551.0,5043.0,54.0,,pooled non-chipped pressure rate across eligible rushers
+within_rusher,other_downs,median_within_rusher_diff,-4.881,-7.1069,-1.5079,percentage_points,,,54.0,0.0,median of per-rusher (chipped - nonchipped) pressure-rate diffs
+play_level,all_downs,chip_pressure_rate,0.360825,,,proportion,315.0,873.0,,,play-level any-rusher pressure rate on chipped plays
+play_level,all_downs,nochip_pressure_rate,0.309578,,,proportion,1755.0,5669.0,,,play-level any-rusher pressure rate on non-chipped plays
+play_level,all_downs,pooled_play_level_diff,5.1246,1.3646,9.1853,percentage_points,,,,0.0,pooled (chip - nochip) play-level diff; game-cluster bootstrap
