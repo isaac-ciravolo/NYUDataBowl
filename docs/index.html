@@ -48,7 +48,7 @@
   .ptable th:first-child,.ptable td:first-child{width:150px}
   .ptable th:nth-child(2),.ptable td:nth-child(2){width:46px}
   .ptable th:nth-child(3),.ptable th:nth-child(4),.ptable th:nth-child(5),
-  .ptable td:nth-child(3),.ptable td:nth-child(4),.ptable td:nth-child(5){width:52px}
+  .ptable td:nth-child(3),.ptable td:nth-child(4),.ptable td:nth-child(5){width:82px}
   th.sorted::after{content:" ▾";color:var(--muted)}
   th.asc.sorted::after{content:" ▴"}
   tr:hover td{background:#fafcfe}
@@ -410,7 +410,12 @@ function playerTable(p){
     }
     const c=cols.find(c=>c[0]===playerSort.col); return c&&c[2]?c[2](r):"";
   };
-  const rows=g.players.slice();
+  // Hide players missing 2+ of the metric values shown for this position group.
+  const nShown=metrics.length;
+  const missingCount=r=>metrics.reduce((n,m)=>n+((r[m.col]===null||r[m.col]===undefined)?1:0),0);
+  const allRows=g.players.slice();
+  const rows=allRows.filter(r=>missingCount(r) < 2);
+  const hidden=allRows.length-rows.length;
   rows.sort((a,b)=>{const x=sortv(a),y=sortv(b); if(x<y)return playerSort.asc?-1:1; if(x>y)return playerSort.asc?1:-1; return a.name<b.name?-1:1;});
 
   const tb=el("tbody");
@@ -433,7 +438,12 @@ function playerTable(p){
   });
   tbl.appendChild(tb); holder.appendChild(tbl);
 
-  const defs=el("div","note"); defs.style.marginTop="12px";
+  const shown=el("div","note"); shown.style.marginTop="8px";
+  shown.innerHTML=`Showing <b>${rows.length}</b> ${playerPG==="TE"?"tight ends":"backs"} with enough route data to compare`
+    + (hidden>0 ? ` · ${hidden} hidden (too little data in 2 or more columns).` : ".");
+  holder.appendChild(shown);
+
+  const defs=el("div","note"); defs.style.marginTop="8px";
   defs.innerHTML="<b>Reading the numbers.</b> Every number compares a player to <i>his own</i> normal (“clean”) routes, so it already accounts for who he is. "
     + "A blank cell means he didn’t run enough chip/leak routes to judge fairly. Scores (1–100) only compare players at the same position. "
     + "These describe what was observed on tape — not a guarantee of future results. Hover any value for the exact definition.";
