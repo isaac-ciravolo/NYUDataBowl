@@ -1,0 +1,49 @@
+# =============================================================================
+# .gitignore — Isaac's setup (NYUDataBowl / Dual-Duty Tax)
+#
+# NOTE ON ALREADY-TRACKED RAW DATA:
+#   The raw CSVs and tracking files (data/*.csv, data/tracking/*.csv) were
+#   committed to this repo BEFORE this .gitignore existed (git ls-files lists
+#   126 tracked files under data/). Rules below are guards for the future; they
+#   do NOT untrack files that are already committed. Removing already-tracked
+#   raw data from git history is intentionally out of scope (do not rewrite
+#   history, do not delete data).
+# =============================================================================
+
+# --- Provided raw data (large source files; share via secure handoff instead) ---
+data/games.csv
+data/players.csv
+data/plays.csv
+data/pffScoutingData.csv
+data/tracking/
+data/tracking/*.csv
+
+# --- Synthetic / fixture data (never share; not real results) ---
+data/route_features_FAKE.parquet
+data/isaac/*_FAKE.*
+
+# --- Local environments ---
+.venv/
+venv/
+env/
+.env
+*.env
+
+# --- Python cache / build artifacts ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Synthetic figure previews (real figures in figures/ stay shareable) ---
+figures/mock/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
