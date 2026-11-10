@@ -116,6 +116,9 @@ pressure? Results saved to `data/isaac/chip_benefit_*.csv`.
 - Negative chip-minus-no-chip pressure means lower *observed* pressure with a
   chip, **not** proof the chip caused it (chipping is not randomly assigned).
 
+## Target analysis (notebook 02)
+When targeted, chippers complete 86% of passes vs 73% on clean routes but gain 1.0 fewer yards: the chip trades depth for a safe checkdown. (Parsed from `plays.playDescription`; yards use `prePenaltyPlayResult`, sacks excluded; TE/RB split in `outputs/target_summary.csv`.)
+
 ## Corrected PFF pass-rush counts
 
 Recomputed directly from `data/pffScoutingData.csv`:
