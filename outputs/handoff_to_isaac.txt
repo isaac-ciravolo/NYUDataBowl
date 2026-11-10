@@ -1,0 +1,7 @@
+@Isaac — route_features.parquet is ready.
+rows: 16272 | size: 0.48 MB
+rows per group: {'clean': 14549, 'chip': 1361, 'leak': 362}
+position split: {('chip', 'FB'): 55, ('chip', 'RB'): 539, ('chip', 'TE'): 767, ('clean', 'FB'): 304, ('clean', 'RB'): 6378, ('clean', 'TE'): 7867, ('leak', 'FB'): 15, ('leak', 'RB'): 18, ('leak', 'TE'): 329}
+NaN rates: {'gameId': 0.0, 'playId': 0.0, 'nflId': 0.0, 'group': 0.0, 'officialPosition': 0.0, 'displayName': 0.0, 't_throw': 0.0, 't_release': 0.389, 'depth_at_throw': 0.0, 'sep_at_throw': 0.0, 'end_event': 0.0, 'los_check_diff_yd': 0.0, 'depth_at_snap': 0.0, 'depth_gain_at_throw': 0.0, 't_release_rel': 0.147, 'released_rel': 0.0, 't_release_rel_capped': 0.0}
+columns (order): gameId, playId, nflId, group, officialPosition, displayName, t_throw, t_release, depth_at_throw, sep_at_throw, end_event, los_check_diff_yd, depth_at_snap, depth_gain_at_throw, t_release_rel, released_rel, t_release_rel_capped
+KEY: use t_release_rel_capped and depth_gain_at_throw (snap-relative) for RB-inclusive analysis; t_release/depth_at_throw are LOS-absolute and NaN-heavy for RBs. end_event in {qb_sack,qb_strip_sack,run} = no throw, drop in analysis. Never pool TE and RB. Coords normalized to face right.

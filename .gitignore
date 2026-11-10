@@ -22,6 +22,15 @@ data/tracking/*.csv
 data/route_features_FAKE.parquet
 data/isaac/*_FAKE.*
 
+# --- Stale / versioned local parquet backups (keep only the canonical
+#     data/route_features.parquet handoff; never commit older snapshots) ---
+data/route_features_v*.parquet
+data/route_features_*_bak.parquet
+
+# --- Local QA log run archives (live qa_log.txt is kept; timestamped
+#     per-run copies are local history, not shared) ---
+outputs/qa_log_*.txt
+
 # --- Local environments ---
 .venv/
 venv/
