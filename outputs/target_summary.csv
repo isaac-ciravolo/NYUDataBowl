@@ -1,0 +1,7 @@
+group,position_group,n_targets,completion_rate,mean_yards,median_yards
+chip,RB,60,0.8333,5.533,4.5
+clean,RB,1124,0.7696,6.073,5.0
+leak,RB,8,0.875,9.0,8.0
+chip,TE,97,0.8763,6.392,6.0
+clean,TE,1302,0.6905,7.98,6.0
+leak,TE,73,0.726,6.397,6.0
