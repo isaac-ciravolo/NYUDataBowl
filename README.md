@@ -1,4 +1,4 @@
-# The Dual-Duty Tax
+# The Dual-Duty Tax: Pricing the TE/RB Chip
 
 **[View the interactive dashboard](#)** 
 (link to be added) for the chip-versus-clean route comparison.
