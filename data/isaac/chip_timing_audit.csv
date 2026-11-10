@@ -1,0 +1,31 @@
+item,value
+timing_source,route_features.parquet (deduped to one row per gameId/playId)
+throw_endpoints,pass_forward + autoevent_passforward (PASS_FORWARD_FALLBACK)
+excluded_endpoints,"qb_sack, qb_strip_sack, run"
+window_seconds_inclusive,2.0-5.0
+t_throw_within_play_max_spread,0.0
+traditional_dropback_plays,6542
+trad_plays_with_timing_record,6304
+trad_plays_missing_route_rows,238
+trad_plays_actual_throw,5890
+trad_plays_retained_in_window,5136
+excluded_no_route_rows,238
+excluded_not_a_throw,414
+excluded_out_of_window,754
+home_team_proxy_would_be_wrong_on,4191
+chip__traditional_dropbacks,968
+chip__fate_missing_timing,18
+chip__fate_known_no_throw,85
+chip__fate_throw_out_of_window,32
+chip__fate_throw_in_window_retained,833
+chip__fate_unexpected_or_invalid,0
+chip__timing_availability,0.981405
+chip__window_retention_within_throw_sample,0.963006
+nochip__traditional_dropbacks,5574
+nochip__fate_missing_timing,220
+nochip__fate_known_no_throw,329
+nochip__fate_throw_out_of_window,722
+nochip__fate_throw_in_window_retained,4303
+nochip__fate_unexpected_or_invalid,0
+nochip__timing_availability,0.960531
+nochip__window_retention_within_throw_sample,0.856318

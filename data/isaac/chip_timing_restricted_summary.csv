@@ -1,0 +1,7 @@
+population,metric,estimate,ci_low,ci_high,unit,num,den,n_games,n_unusable_draws,notes
+unrestricted_all_traditional,chip_pressure_rate,0.360825,,,proportion,315.0,873.0,122,,any-rusher pressure on chip plays
+unrestricted_all_traditional,nochip_pressure_rate,0.309578,,,proportion,1755.0,5669.0,122,,any-rusher pressure on no-chip plays
+unrestricted_all_traditional,chip_minus_nochip_diff,5.1246,1.3646,9.1853,percentage_points,,,122,0.0,"chip-minus-nochip pp; game-cluster bootstrap, 1000 resamples, fixed derived seed"
+timing_restricted_throw_2to5s,chip_pressure_rate,0.29712,,,proportion,227.0,764.0,122,,any-rusher pressure on chip plays
+timing_restricted_throw_2to5s,nochip_pressure_rate,0.28591,,,proportion,1250.0,4372.0,122,,any-rusher pressure on no-chip plays
+timing_restricted_throw_2to5s,chip_minus_nochip_diff,1.121,-2.7164,5.158,percentage_points,,,122,0.0,"chip-minus-nochip pp; game-cluster bootstrap, 1000 resamples, fixed derived seed"
